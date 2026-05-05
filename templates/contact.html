@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact - Ador Decor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <nav>
+        <h2>Ador Decor</h2>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact">
+
+        <h1>Contact Us</h1>
+
+        <p>📞 Phone: 7011336387</p>
+        <p>📧 Email: manavpindwar@gmail.com</p>
+        <p>📍 Rajnagar Extension, Ghaziabad</p>
+
+        <form action="/submit" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <iframe src="https://maps.google.com/maps?q=Rajnagar%20Extension%20Ghaziabad&output=embed"></iframe>
+
+        <a href="https://wa.me/917011336387" target="_blank">
+            <button>Chat on WhatsApp</button>
+        </a>
+
+    </section>
+
+    <a href="https://wa.me/917011336387" class="whatsapp-float">💬</a>
+    <a href="tel:7011336387" class="call-float">📞</a>
+
+</body>
+
+</html>
